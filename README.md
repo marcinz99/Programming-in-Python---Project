@@ -34,3 +34,39 @@ Uruchamianie aplikacji (zalecane):
 * Uruchom broker MQTT
 * Uruchom aplikację plik `main/main.py` (Run 'main')
 * (Opcjonalnie) Uruchom dostarczyciela wydarzeń `event_provider/event_provider.py` (Run 'event_provider')
+
+Aplikacja w obecnej postaci rozróżnia urządzenia na dwa typy:
+* switchable - wszelkie urządzenia, których stan przełącza się między włączonych (`ON`) oraz wyłączonym (`OFF`), jak na przykład żarówka czy telewizor;
+* detector - jak sugeruje nazwa może to być wykrywacz ruchu, dymu, itp.; urządzenia tego typu przełączają się między stanami `IDLE` oraz `EXCITED`.
+
+## Opis zawartości
+
+Poniżej opisana jest zawartość poszczególnych podfolderów projektu (z `src/`).
+
+#### Folder `config`
+
+W folderze tym powinny się znaleźć następującego pliki:
+* plan domu (`home_plan.bmp` o wymiarach 750x520 px)
+* informacje o urządzeniach (`plan.json`)
+Powyższe pliki można zmodyfikować, żeby dostosować aplikację pod konkretne pomieszczenie lub mieszkanie.
+
+#### Folder `dependencies-api`
+
+* `topic_tree.py` - API struktury drzewiastej obsługiwanych tematów
+* `mqtt_api.py` - uproszczone API dla klientów MQTT
+
+#### Folder `img`
+
+Ikony urządzeń obu obsługiwanych typów wraz w możliwymi stanami.
+
+#### Folder `main`
+
+Główny folder aplikacji:
+* `main.py` - główny kod aplikacji
+* `window.py` - klasa definiująca GUI aplikacji w trybie okienkowym
+
+#### Folder `event_privider`
+
+Folder z dostarczycielem zdarzeń dla aplikacji. Uruchomienie jego pozwala zasymulować działanie w normalnych warunkach pracy.
+* `event_provider.py` - kod dostarczyciela wydarzeń
+* `events_schedule.txt` - zaplanowane wydarzenia w formacie "<opóźnienie> <temat> <wiadomość>" w kolejnych linijkach pliku tekstowego
