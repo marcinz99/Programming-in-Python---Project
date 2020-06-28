@@ -1,7 +1,9 @@
 # Programowanie w języku Python
 ## Projekt: System wizualizacji stanu „inteligentnego” domu
 
-Wykonawca: Marcin Zięba
+Wykonawca: **Marcin Zięba**
+
+![app in use](https://github.com/marcinz99/Programming-in-Python---Project/blob/master/img/app.png "Aplikacja w akcji")
 
 ## Informacje ogólne
 
