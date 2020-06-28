@@ -13,10 +13,12 @@ Założenia projetkowe:
 Sugerowane IDE: **PyCharm**
 
 Uwaga: Projekt napisany został w środowisku PyCharm. Uruchamiając go z innego IDE lub z terminalu, może być konieczne wyspecyfikowanie źródeł kodu, korzystając z modułu `sys` przed innymi importami w każdym pliku `*.py`, korzystającym z tych źródeł. Rozwiązanie takie jest jednak odradzane. Lepszym rozwiązaniem będzie pozbycie się podziału na foldery i wrzucenia wszystkiego do jednego.
-> `import sys`<br>
-> `sys.path.append("../dependencies-api")`<br>
-> `sys.path.append("../config")`<br>
-> `sys.path.append("../img")`
+```python
+import sys
+sys.path.append("../dependencies-api")
+sys.path.append("../config")
+sys.path.append("../img")
+```
 
 Wykorzystane moduły spoza biblioteki standardowej:
 * Pillow (`pip install Pillow`)
