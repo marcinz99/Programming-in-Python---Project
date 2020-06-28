@@ -1,0 +1,14 @@
+2000 garden/detect_2 EXCITED
+800 garage/detect_1 EXCITED
+800 garage/bulb_5 ON
+800 garden/detect_2 IDLE
+800 garage/bulb_5 OFF
+800 house/bulbs/bulb_1 ON
+800 garage/detect_1 IDLE
+800 house/bulbs/bulb_2 ON
+800 house/bulbs/bulb_3 ON
+800 house/bulbs/bulb_4 ON
+800 house/bulbs/bulb_1 OFF
+800 house/bulbs/bulb_2 OFF
+800 house/bulbs/bulb_3 OFF
+800 garage/detect_1 EXCITED

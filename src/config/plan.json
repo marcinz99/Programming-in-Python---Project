@@ -1,0 +1,19 @@
+{
+    "root": {
+        "house": {
+            "bulbs": {
+                "bulb_1": [200, 105, "switchable", "OFF", "Żarówka w zachodniej sypialni"],
+                "bulb_2": [590, 80, "switchable", "OFF", "Światło we wschodnim pokoju"],
+                "bulb_3": [370, 75, "switchable", "OFF", "Żarówka w łazience"],
+                "bulb_4": [260, 275, "switchable", "OFF", "Żyrandol w salonie"]
+            }
+        },
+        "garage": {
+            "detect_1": [370, 365, "detector", "IDLE", "Detektor ruchu w garażu"],
+            "bulb_5": [260, 400, "switchable", "OFF", "Żarówka w garażu"]
+        },
+        "garden": {
+            "detect_2": [700, 360, "detector", "IDLE", "Detektor ruchu u bramy"]
+        }
+    }
+}
