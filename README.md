@@ -18,7 +18,7 @@ Uwaga: Projekt napisany został w środowisku PyCharm. Uruchamiając go z innego
 * Jeśli korzystasz z innego IDE, oznacz folder `src/dependencies-api` jako źródło.
 * Jeśli korzystasz z czystego edytora tekstu konieczne może być wyedytowanie `sys.path` w każdym pliku `*.py` spoza folderu `src/dependencies-api`. Rozwiązanie takie jest jednak stanowczo odradzane, gdyż mija się z celem i wymaga sporo niepotrzebnej ręcznej roboty (`import sys` oraz `sys.path.append("../dependencies-api")` przed pozostałymi importami).
 
-Uwaga: Należy pamiętać o uprzednim zainstalowaniu brokera MQTT, np. Mosquito.
+Uwaga: Należy pamiętać o uprzednim zainstalowaniu brokera MQTT, np. Mosquitto.
 
 Wykorzystane moduły spoza biblioteki standardowej:
 * Pillow (`pip install Pillow`)
